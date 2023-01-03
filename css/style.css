@@ -22,6 +22,31 @@ body{
 }
 
 .titulo span{
-    font-size: 2rem;
-    color: var(--oscuro)
+    font-size: 2rem;    
+}
+
+.contenedor{
+    width: 75rem;
+    margin: 0 auto;
+
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    transition: .3s ease-in-out;
 }
