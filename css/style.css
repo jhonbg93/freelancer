@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
 }
 
 body{
@@ -17,8 +17,7 @@ body{
 
 .titulo{
     text-align: center;
-    font-size: 3.8rem;
-    
+    font-size: 3.8rem;    
 }
 
 .titulo span{
@@ -26,7 +25,7 @@ body{
 }
 
 .contenedor{
-    width: 75rem;
+    width: 120rem;
     margin: 0 auto;
 
 }
@@ -36,17 +35,30 @@ body{
 }
 
 .navegacion-principal{
-   padding: 1rem;
    display: flex;
+   flex-direction: column;
    justify-content: space-between;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal {
+        flex-direction: row;
+        
+    }
 }
 
 .navegacion-principal a{
     color: var(--blanco);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold; /*Es lo mismo que aplicar font-weight de 700*/
+    padding: 1rem;
 }
 
 .navegacion-principal a:hover{
     background-color: var(--primario);
+    color: var(--oscuro);
     transition: .3s ease-in-out;
+    border-radius: 20%;
 }
+
